@@ -1,20 +1,19 @@
 'use strict';
 
 function moveZeroes(nums) {
-	let indexZeroes = [];
 
-	nums.forEach((num, index) => {
-		if (num === 0) {
-			indexZeroes.push(index);
-		}
-	})
-
-	for(let i = 0; i < indexZeroes.length; i++) {
-		nums.splice(indexZeroes[i] - i, 1);
-        nums.push(0);
-	}
-
-	return nums;
+    let j = 0;
+    
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[j] === 0) {
+            nums.splice(j, 1);
+            nums.push(0)
+        } else {
+            j++;
+        }
+    }
+    
+    return nums;
 }
 
 // let nums = [0, 1, 0, 3, 12];
