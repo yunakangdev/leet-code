@@ -5,8 +5,9 @@
 ## 📎 PLAN
 
 - Start from March 30 (Tuesday) on Discord
-- Group structure: 5 people
+- Group structure: 5 people from York, Seneca
 - Language: C, C++, Java, JavaScript, Python
+- Date: Every Tues, Thurs, Sunday
 - Time Limit: 1 hour
 
 ## RECORD
