@@ -13,7 +13,7 @@ function numUniqueEmails(emails) {
   const set = new Set();
   
   // normalize each emails in for loops using a separate function and add the new email to the set
-  for (let email in emails) {
+  for (let email of emails) {
     const newEmail = normalizeEmail(email);
     set.add(newEmail);
   }
