@@ -9,4 +9,4 @@ function rotate(nums, k) {
 //  let nums = [1,2,3,4,5,6,7];
 //  let k = 3;
 
-//  console.log(solution(nums, k));
+//  console.log(rotate(nums, k));
