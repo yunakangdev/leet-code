@@ -1,6 +1,18 @@
 'use strict';
 
 const removeDuplicates = function(nums) {
+  let i = 0;
+  for (let j = 1; j < nums.length; j++) {
+      if (nums[i] != nums[j]) {
+          i++;
+          nums[i] = nums[j];
+      }
+  }
+  return i + 1;
+}
+
+// another way without making an extra space (O(1))
+const removeDuplicates = function(nums) {
   // make a function that returns a unique value
   function unique(num, index) {
     return nums.indexOf(num) === index;
@@ -13,6 +25,7 @@ const removeDuplicates = function(nums) {
   return nums.length;
 }
 
+// O(N) memory
 // const removeDuplicates = function(nums) {
 // 	// make a Set to store unique values
 // 	let set = new Set();
