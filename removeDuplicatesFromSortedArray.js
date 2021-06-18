@@ -4,12 +4,20 @@ const removeDuplicates = function(nums) {
   let i = 0;
   for (let j = 1; j < nums.length; j++) {
       if (nums[i] != nums[j]) {
-          i++;
-          nums[i] = nums[j];
+        i++;
+        nums[i] = nums[j];
       }
   }
   return i + 1;
 }
+
+let i = 0;
+for (let j = 1; j < nums.length; j++) {
+  if (nums[i] === nums[j]) {
+    nums.slice(i, j + 1);
+  }
+}
+return nums;
 
 // another way without making an extra space (O(1))
 const removeDuplicates = function(nums) {
